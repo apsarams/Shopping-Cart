@@ -1,15 +1,6 @@
 import java.applet.Applet;
 import java.util.*;
 
-// This class implements an applet registry where applets
-// can locate each other. It is an observable, so if you want
-// to wait for a particular class, you can be an observer. This
-// is better than the polling you have to do with getApplet.
-//
-// This class is implemented as a singleton, which means there
-// is only one. The single instance is kept in a protected
-// static variable and returned by the instance() method.
-
 public class AppletRegistry extends Observable
 {
 
