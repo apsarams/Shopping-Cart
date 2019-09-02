@@ -5,8 +5,6 @@ import java.util.*;
 import java.io.*;
 import javax.swing.JApplet.*;
 // This class represents the catalog portion of a shopping cart.
-// You can select items and then either view a description of
-// the item or add the item to the shopping cart.
 
 public class ItemPickerApplet extends Applet implements Observer
 {
@@ -88,7 +86,6 @@ public class ItemPickerApplet extends Applet implements Observer
 
 		ShoppingCartItem item = (ShoppingCartItem) ob;
 
-// If it has a description URL, open it up in another frame
 		if (item.descriptionURL != null) {
 			getAppletContext().showDocument(
 				item.descriptionURL, "descframe");
